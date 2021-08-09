@@ -1,0 +1,229 @@
+
+
+body{
+	outline: none;
+}
+
+::-webkit-scrollbar{width:5px; height:7px}
+::-webkit-scrollbar-thumb { background: #000;border-radius:5px}
+::-webkit-scrollbar-track { background:#999}
+
+.bg-light{
+    background: rgb(90,48,164);
+    background: linear-gradient(90deg, rgba(90,48,164,1) 0%, rgba(103,58,183,1) 49%, rgba(112,63,199,1) 100%);
+    padding: 20px 0px 50px 0px;
+}
+.topo .navbar-light .navbar-brand,.topo .navbar-light .nav-link, .subs-topo{
+    color: #fff!important;
+}
+.subs-topo{
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+.subs-topo h2{
+    font-size: 20px;
+}
+
+.body-full{
+    margin: 50px 0px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.categorias h2{
+    font-size: 15px;
+    list-style: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 26ch;
+}
+.categorias a{
+    text-decoration: none;
+    color: #000;
+}
+.categorias .card{
+    margin: 10px 0px;
+    border: none;
+    transition: all 0.5s ase;
+}
+.categorias .card:hover{
+    background: #efefef;
+}
+.input-busca input{
+    border:none;
+    padding: 10px;
+    border-radius: 3px;
+
+}
+.input-busca-cidade{
+    position: relative;
+    margin: 0px 10px 0px 10px;
+}
+.resultado{
+    display: none;
+    background: #fff;
+    max-height: 250px;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    z-index: 11111;
+}
+
+.resultado .list-group-item{
+    cursor: pointer;
+    border:none;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.resultado .list-group-item:hover{
+    background: #046ca9;
+    color: #fff;
+}
+.resultado .list-group-item .car-iten-nome{
+font-size: 15px;
+    font-weight: 400;
+}
+
+.resultado .list-group-item .car-item-val{
+    float: right;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+
+
+.empresas{
+    margin: 20px 0px 50px 0px;
+}
+.empresas .card{
+    transition: all 0.5s ease;
+}
+.empresas .card:hover{
+    background: #efefef;
+}
+.empresas a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.load-one{
+    display: none;
+    margin: 10px 0px 0px 0px;
+}
+
+.load-one .c-loader{
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: #ff8944;
+    height: 60px;
+    width: 60px;
+}
+
+.c-loader {
+	z-index: 11;
+    position: relative;
+    animation: is-rotating 1s infinite;
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: #ff8944;
+    height: 80px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loud {
+    
+}
+.loadinging {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    z-index: 10;
+}
+.loadingingimg {
+    width: 100%;
+    position: absolute;
+    margin: 310px 0px 0px 0px;
+}
+.loadingingimgimg {
+    text-align: center;
+    width: 100%;
+    z-index: 11;
+}
+
+
+/** BreadCrumbs **/
+.breadcrumb{
+    margin: 0px 0px 0px 0px;
+}
+.breadcrumb ol{
+    display: flex;
+}
+.breadcrumb ol li{
+    list-style: none;
+    margin: 0px 10px 0px 0px;
+    padding: 1px 0px 0px 0px;
+    color: #96d099;
+}
+.breadcrumb ol li a{
+    text-decoration: none;
+    color: #4caf50;
+    transition: all ease 0.3s;
+}
+.breadcrumb ol li a:hover{
+    color: #96d099;
+}
+.bread-arrow{
+        margin: 0px 5px 0px 0px;
+        color: #96d099;
+}
+
+.footer.bg-light{
+    padding: 25px 0px 5px 0px;
+}
+.footer p{
+    color: #fff;
+}
+
+.pagination{
+    justify-content: center;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url(/assets/img/hamb.png);
+}
+
+.topo .col-12{
+    padding: 0;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .d-flex{
+        width: 100%;
+        display: block!important;
+    }
+    .input-busca-cidade{
+        margin: 10px 0px;
+    }
+    .breadcrumb ol{
+        margin: 0;
+        padding:0;
+    }
+    .breadcrumb ol li{
+        margin: 0;
+        padding:0;
+    }
+    .breadcrumb ol li a{
+        font-size: 11px;
+    }
+
+}
