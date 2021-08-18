@@ -6,7 +6,7 @@
 
 Site para busca de empresas do brasil.
 
-- [Simple, fast routing engine](https://uaimidia.com.br).
+- [Link para o site](https://uaimidia.com.br).
 
 
 ## Tecnologias udadas
